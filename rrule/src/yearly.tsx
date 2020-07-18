@@ -95,7 +95,7 @@ export default (props: any) => {
             if (end.key === "Never") {
                 setOutput(
                     new RRule({
-                        freq: RRule.MONTHLY,
+                        freq: RRule.YEARLY,
                         interval: Number(interval),
                         bymonthday: Number(days),
                         bymonth:month.data
@@ -104,7 +104,7 @@ export default (props: any) => {
             } else if (end.key === "Count") {
                 setOutput(
                     new RRule({
-                        freq: RRule.MONTHLY,
+                        freq: RRule.YEARLY,
                         interval: Number(interval),
                         count: Number(count),
                         bymonthday: Number(days),
@@ -114,7 +114,7 @@ export default (props: any) => {
             } else {
                 setOutput(
                     new RRule({
-                        freq: RRule.MONTHLY,
+                        freq: RRule.YEARLY,
                         interval: Number(interval),
                         until: date,
                         bymonthday: Number(days),
@@ -126,7 +126,7 @@ export default (props: any) => {
             if (end.key === "Never") {
                 setOutput(
                     new RRule({
-                        freq: RRule.MONTHLY,
+                        freq: RRule.YEARLY,
                         interval: Number(interval),
                         bysetpos: pos.data,
                         byweekday: day.data,
@@ -136,7 +136,7 @@ export default (props: any) => {
             } else if (end.key === "Count") {
                 setOutput(
                     new RRule({
-                        freq: RRule.MONTHLY,
+                        freq: RRule.YEARLY,
                         interval: Number(interval),
                         count: Number(count),
                         bysetpos: pos.data,
@@ -147,7 +147,7 @@ export default (props: any) => {
             } else {
                 setOutput(
                     new RRule({
-                        freq: RRule.MONTHLY,
+                        freq: RRule.YEARLY,
                         interval: Number(interval),
                         until: date,
                         bysetpos: pos.data,
